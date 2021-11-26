@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@1,300&family=Outfit:wght@200;400;600&display=swap');
+
+* {
+    background-color:white;
+    margin: 10px;
+}
+
+
+.nav {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding:5px;
+    border-top: 2.5px;
+    border-bottom: 2.5px;
+    border-left: 0px;
+    border-right: 0px;
+    border-style: solid;
+    border-color:#d36582;
+    height: 45px;
+    font-family:'Karla', sans-serif;
+    
+    
+}
+ul.navigation {
+    margin:0px auto;
+    position:relative;
+    
+}
+ 
+ul.navigation li {
+    display:inline;
+    font-size:12px;
+    font-weight:bold;
+    margin:0;
+    padding:0;
+    float:left;
+    position:relative;
+}
+ 
+ul.navigation li a {
+    padding:5px 40px;
+    color:#616161;
+    text-decoration:none;
+    display:inline-block;
+    
+    -webkit-transition:color 0.2s linear, background 0.2s linear;
+    -moz-transition:color 0.2s linear, background 0.2s linear;
+    -o-transition:color 0.2s linear, background 0.2s linear;
+    transition:color 0.2s linear, background 0.2s linear;
+}
+ 
+
+
+ul.navigation li:hover > ul
+{
+/*these 2 styles are very important,
+being the ones which make the drop-down to appear on hover */
+    visibility:visible;
+    opacity:1;
+}
+ 
+ul.navigation ul, ul#navigation ul li ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+/*the next 2 styles are very important,
+being the ones which make the drop-down to stay hidden */
+    visibility:hidden;
+    opacity:0;
+    position: absolute;
+    z-index: 99999;
+    width:180px;
+    background:#f8f8f8;
+    box-shadow:1px 1px 3px #ccc;
+/* css3 transitions for smooth hover effect */
+    -webkit-transition:opacity 0.2s linear, visibility 0.2s linear;
+    -moz-transition:opacity 0.2s linear, visibility 0.2s linear;
+    -o-transition:opacity 0.2s linear, visibility 0.2s linear;
+    transition:opacity 0.2s linear, visibility 0.2s linear;
+}
+ 
+ul.navigation ul {
+    top: 43px;
+    left: 1px;
+}
+ 
+ul.navigation ul li ul {
+    top: 0;
+    left: 181px; /* strong related to width:180px; from above */
+}
+ 
+ul.navigation ul li {
+    clear:both;
+    width:100%;
+    border:0 none;
+    border-bottom:1px solid #c9c9c9;
+}
+ 
+ul.navigation ul li a {
+    background:none;
+    padding:7px 15px;
+    color:#616161;
+    text-shadow:1px 1px 0px #fff;
+    text-decoration:none;
+    display:inline-block;
+    border:0 none;
+    clear:both;
+    width:150px;
+}
+
+#logo {
+    font-family:'Karla', sans-serif;
+    font-size: 100px;
+    text-align: center;
+    color:#d36582;
+}
+
+  
+#image {
+    background-image: url("/images/rapeseed flower and petals.jpeg");
+  
+}
+
+.subheading { 
+    font-size: 30px;
+    font-family: 'Karla', sans-serif;
+    text-align: left;
+    color:#d36582;
+
+}
+
+
+
+.answers {
+    font-family: 'Karla', sans-serif;
+    font-size: 20px;
+    text-align: left;
+    color:black;
+}
+  
+
+.pagename {
+    color: #d36582;
+    font-size: 50px;
+    font-family: 'Karla', sans-serif;
+    text-align: center;
+}
+
+a:visited, a:link {
+    color: #d36582;
+    
+}
+.container {
+    display: flex; 
+    min-height: 100vh;
+    flex-direction: row;
+    min-width: 50vh;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    row-gap: 100px;
+    column-gap: 100px;
+    object-fit: contain;
+    
+}
+
+
+​.box {
+    color:#d36582;
+    font-size: 20px;
+    padding: 25px;
+    flex-wrap: wrap;
+    object-fit: contain;
+    width: 50%;
+    
+}
+
+.box1 {
+    margin-left: 50px;
+    text-align: center; 
+    font-family: 'Karen', sans-serif;
+    width: 40%;
+    font-size: 25px;
+
+}
+.box2 { 
+    margin-left: 50px;
+    text-align: center; 
+    font-family: 'Karen', sans-serif;
+    width:40%;
+    font-size: 25px;
+}
+.box3 {
+    margin-left: 50px;
+    text-align: center; 
+    font-family: 'Karen', sans-serif;
+    width: 40%;
+    font-size: 25px;
+}
+.box4 {
+    margin-left: 50px;
+    text-align: center; 
+    font-family: 'Karen', sans-serif;
+    width:40%;
+    font-size: 25px;
+
+}
+
+.​box5 {
+    color:#d36582;
+    font-size: 100px;
+    padding: 25px;
+    flex-wrap: wrap;
+    object-fit: contain;
+    width: 50%;
+    
+}
+
+.box6 {
+    margin-left: 50px;
+    text-align: center; 
+    font-family: 'Karen', sans-serif;
+    width: 40%;
+
+}
+.box7 { 
+    margin-left: 50px;
+    text-align: center; 
+    font-family: 'Karen', sans-serif;
+    width:40%;
+}
+.box8 {
+    margin-left: 50px;
+    text-align: center; 
+    font-family: 'Karen', sans-serif;
+    width: 40%;
+}
+.box9 {
+    margin-left: 50px;
+    text-align: center; 
+    font-family: 'Karen', sans-serif;
+    width:40%;
+
+}
+.box10 {
+    margin-left: 50px;
+    text-align: center; 
+    font-family: 'Karen', sans-serif;
+    width:40%;
+}
+.box11 {
+    margin-left: 50px;
+    text-align: center; 
+    font-family: 'Karen', sans-serif;
+    width:40%;
+    
+}
